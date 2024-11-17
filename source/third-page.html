@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Асинхронный JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="ajax">
+      <div class="first-block">
+        <h1 class="header">1. Fetch API — Случайные пользователи</h1>
+        <ul class="user__list"></ul>
+      </div>
+
+      <div class="first-block">
+        <h1 class="header">2. Карусель изображений</h1>
+
+        <div class="gallery">
+          <div class="gallery__inner">
+            <div class="gallery__item">
+              <img src="img/img-1.jpg" width="700" height="466" alt="Фото 1" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/img-2.jpg" width="700" height="466" alt="Фото 2" />
+            </div>
+            <div class="gallery__item">
+              <img src="img/img-3.jpg" width="700" height="466" alt="Фото 3" />
+            </div>
+          </div>
+          <div>
+            <button class="btn-prev" type="button">Назад</button>
+            <button class="btn-next" type="button">Вперёд</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Назад</a></p>
+    </footer>
+
+    <template id="user-item-template">
+      <li class="user__item">
+        <span class="user__name"></span>
+        <a class="user__email" href=""></a>
+        <img
+          class="user__img"
+          src=""
+          width="50"
+          height="50"
+          alt="Фото пользователя"
+        />
+      </li>
+    </template>
+
+    <script src="js/third.js"></script>
+  </body>
+</html>

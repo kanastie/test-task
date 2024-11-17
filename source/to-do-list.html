@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Менеджер задач</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="todo">
+      <div class="first-block">
+        <h1 class="header">Список задач</h1>
+
+        <div>
+          <ul class="task__list"></ul>
+        </div>
+
+        <div class="new-task__block">
+          <label class="new-task__label" for="todo-new">Новая задача</label>
+          <input class="new-task__input" type="text" id="todo-new" required />
+          <button class="new-task__add-btn" type="submit">Добавить</button>
+        </div>
+
+        <p>Завершённые</p>
+        <div>
+          <ul class="task__list task__list--done"></ul>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Назад</a></p>
+    </footer>
+
+    <template id="task-item-template">
+      <li class="task__item">
+        <label class="task__label">
+          <input class="task__input" type="checkbox" />
+          <span class="task__heading"></span>
+          <button class="task__del" type="button">
+            <span class="visually-hidden">Удалить</span>
+          </button>
+        </label>
+      </li>
+    </template>
+
+    <script src="js/second-dom.js"></script>
+  </body>
+</html>
